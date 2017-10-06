@@ -37,10 +37,12 @@
         <li> шаблонизация; </li>
         <li> обновление DOM. </li>
     </ul>
-    <blockquote>— «Ок, теперь у нас есть метрики, мы можем отправить их на сервер» - говорим мы <br>
-        — «Что же дальше?» - вопрошаете вы <br>
-        — «А давай построим график!» - отвечаем мы <br>
-        — «А что будем считать?» - уточняете вы </blockquote>
+            <pre>
+            — <q>Ок, теперь у нас есть метрики, мы можем отправить их на сервер</q> - говорим мы
+            — <q> Что же дальше?</q> - вопрошаете вы
+            — <q> А давай построим график!</q> - отвечаем мы
+            — <q> А что будем считать?</q> - уточняете вы
+            </pre>
 
     <p> Как вы знаете, медиана – это серединное, а не среднее значение в выборке.
         Если у нас имеются числа 1, 2, 2, 3, 8, 10, 20, то медиана – 3, а среднее – 6,5.
@@ -77,7 +79,7 @@
 
     <code> var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'];</code>
 
-            <span>И на сервер прилетают подобные записи:</span>
+            <p>И на сервер прилетают подобные записи:</p>
 
     <code>serverResponse=50&domUpdate=60</code>
         </article>
@@ -94,8 +96,8 @@
         <li> используем CDN; </li>
     </ul>
 
-    <p> Мы подумали: «А что если хранить где-то старую версию файлов, а при выходе новой
-        передавать только diff между ней и той, которая сохранена у пользователя?»
+    <p> Мы подумали: <q>А что если хранить где-то старую версию файлов, а при выходе новой
+        передавать только diff между ней и той, которая сохранена у пользователя?</q>
         В браузере же останется просто наложить патч на клиенте.</p>
 
     <p> На самое деле эта идея не нова. Уже существуют стандарты для HTTP — например,
@@ -143,7 +145,7 @@
 "p": [patch],
 "s": 4554
 }
-    ]</pre>
+]</pre>
 
     <p>То есть это обычный массив из объектов. Каждый объект — отдельный ресурс. У
         каждого объекта есть три свойства. k — названия ключа в localStorage для этого
@@ -207,37 +209,40 @@
     </article>
     </section>
 <address>
-    Автор: @doochik <br>
-    С++ разработик <br>
-    Электронная почта: (<a href="doochik@yandex-team.ru">doochik@yandex-team.ru</a>) <br>
-    Компания: Яндекс <br>
+<pre>
+    Автор: @doochik
+    С++ разработик
+    Электронная почта: ( <a href="doochik@yandex-team.ru">doochik@yandex-team.ru</a>)
+    Компания: Яндекс
+</pre>
 </address>
+    <section>
+    <h4> Комментарии (3): </h4>
 
-    <h4>Комментарии (3):</h4>
+    <article><pre>- <strong> Mogaika </strong> (<a href="mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>) 30 ноября 2014 в 17:05 </pre>
 
-    <pre>- <strong> Mogaika </strong> (<a href="mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>) <span>30 ноября 2014 в 17:05</span>
+        А можете привести сравнение, на сколько быстрее грузится lite версия? </article>
 
-        А можете привести сравнение, на сколько быстрее грузится lite версия?</pre>
+    <article><pre>- <strong> JIguse </strong> (<a href="mrawesome@yandex.ru">mrawesome@yandex.ru</a>) 29 ноября 2014 в 21:30 </pre>
 
-    <pre>- <strong> JIguse </strong> (<a href="mrawesome@yandex.ru">mrawesome@yandex.ru</a>) <span>29 ноября 2014 в 21:30</span>
+    <p>Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми
+        подробностями о внутренней работе сервисов. </p> </article>
 
-    Спасибо за статью, познавательно. Здорово, что Яндекс делится некоторыми
-        подробностями о внутренней работе сервисов. </pre>
+    <article><pre>- <strong> Brister </strong> (<a href="brist89@yandex-team.ru">brist89@yandex-team.ru</a>) 24 ноября 2014 в 13:13 </pre>
 
-    <pre>- <strong> Brister </strong> (<a href="brist89@yandex-team.ru">brist89@yandex-team.ru</a>) <span>24 ноября 2014 в 13:13</span>
+    <p>(кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех). </p>
+    <p>Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,
+        хорошо или плохо работает почта.</p>
 
-    (кол-во счастливых пользователей + кол-во удовлетворенных / 2) / (кол-во всех).
-    Получается значение от нуля до единицы, которое, видимо, лучше всего показывает,
-    хорошо или плохо работает почта.
+        <p>наверное все-таки от 0.5 до 1</p> </article>
 
-        наверное все-таки от 0.5 до 1</pre>
+    <article><pre>- <strong>alexeimois</strong> (<a href="test@yandex.ru">test@yandex.ru</a>) 22 ноября 2014 в 17:35 </pre>
 
-    <pre>- <strong>alexeimois</strong> (<a href="test@yandex.ru">test@yandex.ru</a>) <span>22 ноября 2014 в 17:35</span>
-
-    Мы измеряем скорость загрузки с помощью Яндекс.Метрики:
-        <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">help.yandex.ru/metrika/reports/monitoring_timing.xml</a></pre>
+    <p>Мы измеряем скорость загрузки с помощью Яндекс.Метрики:</p>
+        <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">help.yandex.ru/metrika/reports/monitoring_timing.xml</a></article>
+    </section>
 </main>
 <hr>
-<footer> <small> © Яндекс, <a href="help@yandex.ru">help@yandex.ru</a>, Хохрякова, 10 </small> </footer>
+<footer> <small> &copy; Яндекс, help@yandex.ru, Хохрякова, 10 </small> </footer>
 </body>
 </html>
